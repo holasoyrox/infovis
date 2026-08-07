@@ -23,8 +23,17 @@
     }
     header {
       background: var(--negro);
-      margin: 0 -1rem 3rem;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      margin-bottom: 3rem;
       padding: 2rem 1rem;
+      box-sizing: border-box;
+    }
+    header > * {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
     h1 {
       margin-bottom: 0.25rem;
