@@ -63,6 +63,25 @@
       margin-bottom: 1rem;
     }
     .interpretacion { margin-top: 1rem; color: #333; }
+    .favoritos-grid {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .favoritos-grid figure {
+      margin: 0;
+      flex: 1 1 200px;
+      text-align: center;
+    }
+    .favoritos-grid img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 6px;
+    }
+    .favoritos-grid figcaption {
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
     .fuente { font-size: 0.85rem; color: var(--gris); }
     a { color: var(--netflix-red); }
   </style>
@@ -94,8 +113,23 @@
   <section>
     <h2>¿Qué series maratoneé más fuerte?</h2>
     <iframe title="Top 15 Maratones" aria-label="Split Bars" id="datawrapper-chart-j6hFb" src="https://datawrapper.dwcdn.net/j6hFb/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="445" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener("message",function(e){if(e.data["datawrapper-height"]!==void 0){var t=document.querySelectorAll("iframe");for(var n in e.data["datawrapper-height"])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data["datawrapper-height"][n]+"px";i.style.height=a}}})}e()})();</script>
-    <p class="interpretacion">🥇 Stranger Things fue la serie ganadora de la temporada 2025-2026: la que más maratoneé, con 1794 minutos vistos.</p>
+    <p class="interpretacion">🥇 = mi favorita más allá de los datos: aunque Stranger Things sumó más minutos, "Something Very Bad Is Going to Happen" fue la que más disfruté de la temporada 2025-2026.</p>
     <p class="fuente">Fuente: DataWrapper</p>
+  </section>
+
+  <section class="favoritos">
+    <h2>¿Cuáles fueron mi serie y mi película favorita?</h2>
+    <div class="favoritos-grid">
+      <figure>
+        <img src="./img/serie-favorita.jpg" alt="Portada de la serie favorita">
+        <figcaption><!-- Nombre de la serie favorita --></figcaption>
+      </figure>
+      <figure>
+        <img src="./img/pelicula-favorita.jpg" alt="Portada de la película favorita">
+        <figcaption><!-- Nombre de la película favorita --></figcaption>
+      </figure>
+    </div>
+    <p class="interpretacion"></p>
   </section>
 
   <section>
