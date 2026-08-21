@@ -84,6 +84,29 @@
     }
     .fuente { font-size: 0.85rem; color: var(--gris); }
     a { color: var(--netflix-red); }
+    .kpis-grid {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .kpi {
+      flex: 1 1 160px;
+      text-align: center;
+      padding: 1.25rem 1rem;
+      border: 1px solid var(--gris-claro);
+      border-radius: 8px;
+    }
+    .kpi .valor {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--netflix-red);
+      line-height: 1.1;
+    }
+    .kpi .etiqueta {
+      margin-top: 0.35rem;
+      color: #333;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -94,6 +117,28 @@
       <!--  -->
     </p>
   </header>
+
+  <section class="kpis">
+    <h2>En números</h2>
+    <div class="kpis-grid">
+      <div class="kpi">
+        <div class="valor">15</div>
+        <div class="etiqueta">Películas vistas</div>
+      </div>
+      <div class="kpi">
+        <div class="valor">52</div>
+        <div class="etiqueta">Series vistas</div>
+      </div>
+      <div class="kpi">
+        <div class="valor">303,3 h</div>
+        <div class="etiqueta">Horas totales vistas</div>
+      </div>
+      <div class="kpi">
+        <div class="valor">530</div>
+        <div class="etiqueta">Plays totales</div>
+      </div>
+    </div>
+  </section>
 
   <section>
     <h2>¿Hay una temporada para cada género?</h2>
@@ -118,18 +163,22 @@
   </section>
 
   <section class="favoritos">
-    <h2>¿Cuáles fueron mi serie y mi película favorita?</h2>
+    <h2>¿Cuáles fueron mi serie y mis películas favoritas?</h2>
     <div class="favoritos-grid">
       <figure>
         <img src="./img/serie-favorita.jpg" alt="Portada de la serie favorita">
-        <figcaption><!-- Nombre de la serie favorita --></figcaption>
+        <figcaption>Something Very Bad Is Going to Happen</figcaption>
       </figure>
       <figure>
-        <img src="./img/pelicula-favorita.jpg" alt="Portada de la película favorita">
-        <figcaption><!-- Nombre de la película favorita --></figcaption>
+        <img src="./img/pelicula-favorita.jpg" alt="Portada de la película favorita: Knives Out">
+        <figcaption>Knives Out</figcaption>
+      </figure>
+      <figure>
+        <img src="./img/pelicula-favorita-2.jpg" alt="Portada de la película favorita: Wake Up Dead Man">
+        <figcaption>Wake Up Dead Man: A Knives Out Mystery</figcaption>
       </figure>
     </div>
-    <p class="interpretacion"></p>
+    <p class="interpretacion">Empate a 98 pts en Rochis_Tomatoes entre las dos películas de la saga Knives Out.</p>
   </section>
 
   <section>
